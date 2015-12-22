@@ -1,0 +1,32 @@
+
+# coding: utf-8
+
+# In[1]:
+
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+
+# In[2]:
+
+def tfria (dims):
+    vaso = np.round(3*np.random.rand (6, 6))
+    
+    for i in range (min(dims)):
+        vaso [i,i] = i
+    return vaso
+plt.matshow (np.random.rand(100, 100))
+
+def thot (dims):
+    W = [0, 1]
+    O = [2, 3]
+    liquidos = W, O
+    for k in liquidos:
+        if W == 4:
+            return W
+        else:
+            return O
+        plt.matshow (thot(k), np.random.rand (100,100))
+
+plt.show()
