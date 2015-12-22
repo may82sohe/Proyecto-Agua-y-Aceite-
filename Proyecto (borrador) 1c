@@ -1,0 +1,26 @@
+
+# coding: utf-8
+
+# In[1]:
+
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+
+# In[2]:
+
+def tfria (dims):
+    vaso = np.round(3*np.random.rand (100,100))
+    
+    for i in range (dims):
+        vaso [0, 2] = i
+    return vaso
+
+def tcaliente (dims):    
+    for k in liquidos (dims):
+        liquidos [1, 3] = k
+        plt.matshow (tcaliente(k))
+
+plt.matshow (np.random.rand(100, 100))
+plt.show()
