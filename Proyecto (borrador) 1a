@@ -1,0 +1,34 @@
+
+# coding: utf-8
+
+# In[1]:
+
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+
+# In[2]:
+
+def tfria (n):
+    vaso = np.round(3*np.random.rand (100, 100))
+    
+    for i in range (4):
+        vaso [i,i] = i
+    return vaso
+
+    W = [0, 1]
+    O = [2, 3]
+    liquidos = W, O
+    for j in range (4):
+        for k in liquidos:
+            if vaso.count (0, 1) >= 3:
+                return (0, 1)
+            if vaso.count (2, 3) >= 3:
+                return (2, 3)
+            else:
+                return vaso
+            plt.matshow (tfria(k))
+            
+plt.matshow(np.random.rand(100,100))  
+plt.show()
